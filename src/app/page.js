@@ -7,7 +7,7 @@ export default function Home() {
   const [user, setUser] = useState('');
   useEffect(() => {
     async function getData() {
-      const res = await fetch('http://localhost:3000/api/test', {
+      const res = await fetch('/api/test', {
         method: 'Post',
         body: JSON.stringify({ input: 'raja' }),
         headers: {
